@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -42,3 +43,46 @@ html {
 h1{
 font-weight: 600;
 }
+=======
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes slide {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-100%); }
+  40% { transform: translateX(-200%); }
+  60% { transform: translateX(-300%); }
+  80% { transform: translateX(-400%); }
+  100% { transform: translateX(0); }
+}
+
+/* Add these custom classes */
+.animate-slide {
+  animation: slide 15s linear infinite;
+}
+
+.testimonial-slider:hover {
+  animation-play-state: paused;
+}
+
+
+#tab1:checked ~ .tab-content #content-tab1,
+#tab2:checked ~ .tab-content #content-tab2,
+#tab3:checked ~ .tab-content #content-tab3 {
+  display: block;
+}
+
+#tab1:checked ~ .tab-content #content-tab2,
+#tab1:checked ~ .tab-content #content-tab3,
+#tab2:checked ~ .tab-content #content-tab1,
+#tab2:checked ~ .tab-content #content-tab3,
+#tab3:checked ~ .tab-content #content-tab1,
+#tab3:checked ~ .tab-content #content-tab2 {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+>>>>>>> 423abe186870b20b416e4a778567eb10653e6dcf
